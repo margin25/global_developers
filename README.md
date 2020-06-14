@@ -1,5 +1,5 @@
 # Offline Movement :iphone:
-![Offline Movement Ad Poster](assets/media/Dribble.png)
+![Offline Movement Ad Poster](Dribble.png)
 
 Offline Movement is a phone application that allows users to connect to others without using Cellular Data or the Internet.  This Offline Messaging feature is secured by a peer-to-peer mesh network (Bluetooth) that allows for direct communication between smartphones.To enforce privacy the app includes encrypted messages and tools to blur individuals' faces in photos and vidoes. In order to ensure safety the app has a voice-activated video recording system installed. Offline Movement is a savior during disaster situations and mass gatherings.
 
@@ -41,7 +41,7 @@ We learned how to use Android Studio for the first time, and how to work togethe
 2. In Android Studio, create an Android Virtual Device (AVD) that the emulator can use to install and run your app.-->In the toolbar, select the AVD that you want to run your app on from the target device drop-down menu.Click Run. OR Use Android Device. On the device, open the Settings app, select Developer options, and then enable USB debugging.
 
 ## App Demo
-<img src="/assets/media/Offline_Movement.gif" width="250"/>
+<img src="Offline_Movement.gif" width="250"/>
 
 ## Authors
 
