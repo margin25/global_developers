@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.developerchallenge">
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true"
+        android:smallScreens="true"/>
+
+    //Permissions
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/camera"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+    <activity
+        android:name="com.zod.facedetectionjavaandroid.MainActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="landscape" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.zod.facedetectionjavaandroid.Training"
+        android:label="@string/title_activity_recognition" >
+    </activity>
+    <activity
+        android:name="com.zod.facedetectionjavaandroid.SettingMain1"
+        android:label="@string/title_activity_setting_main1" >
+    </activity>
+    <activity
+        android:name="com.zod.facedetectionjavaandroid.RealTimeRecognition"
+        android:label="@string/title_activity_real_time_recognition" >
+    </activity>
+    <activity
+        android:name="com.zod.facedetectionjavaandroid.Aboutc"
+        android:label="@string/title_activity_aboutc" >
+    </activity>
+    <activity
+        android:name="com.zod.facedetectionjavaandroid.Database"
+        android:label="@string/title_activity_database"
+        android:theme="@style/DetailTheme" >
+    </activity>
+    <activity
+        android:name="com.zod.facedetectionjavaandroid.DetailsActivity"
+        android:label="@string/title_activity_details"
+        android:theme="@style/DetailTheme" >
+    </activity>
+    <activity android:name="com.zod.facedetectionjavaandroid.SaveForAlignment" >
+    </activity>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity5" />
+        <activity android:name=".activity4" />
+        <activity android:name=".activity3" />
+        <activity android:name=".activity2" />
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Uncomment to launch activity automatically on boot for android-things-->
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!--<category android:name="android.intent.category.IOT_LAUNCHER"/>-->
+            <!--<category android:name="android.intent.category.DEFAULT"/>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".main_chat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.developerchallenge.main_chat" />
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- Bridgefy SDK key -->
+        <meta-data
+            android:name="com.bridgefy.sdk.API_KEY"
+            android:value="API_KEY" />
+    </application>
+
+</manifest>
